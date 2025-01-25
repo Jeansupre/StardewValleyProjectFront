@@ -1,0 +1,11 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Esto elimina el scrollbar */
+  display: block;
+  height: 100vh;
+  background-image: url('/stardewbackground.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
