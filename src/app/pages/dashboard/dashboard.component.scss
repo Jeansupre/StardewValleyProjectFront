@@ -1,0 +1,17 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+}
+
+.contenedor-negro {
+  width: 90%; /* 90% del ancho */
+  height: 80%; /* 90% de la altura */
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo negro con transparencia */
+  border-radius: 10px; /* Opcional: para bordes redondeados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Espaciado interno */
+}

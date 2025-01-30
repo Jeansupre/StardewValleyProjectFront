@@ -1,0 +1,32 @@
+form {
+  width: 300px;
+  margin: 0 auto;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+
+button:disabled {
+  background-color: #ccc;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
