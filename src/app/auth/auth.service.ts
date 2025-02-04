@@ -34,11 +34,13 @@ export class AuthService {
 
   getLogin(username: string, password: string): Observable<any> {
     return this.http
-    .post<any>(`${environment.api_public}/auth/login`, { username, password }, {
-      headers: {
-        'Accept-Language': '',
-      },
-    })
+    .post<any>(`${environment.api_public}/auth/login`, { username, password },
+      {
+        headers: {
+          'Accept-Language': '',
+        },
+      }
+    )
   }
 
   logout(): void {

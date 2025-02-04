@@ -1,0 +1,18 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ocupa toda la altura de la pantalla */
+}
+
+h1 {
+  color: azure;
+  font-size: 3rem;
+}
+
+p {
+  color: azure;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 1rem;
+}

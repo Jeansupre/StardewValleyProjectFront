@@ -1,0 +1,42 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+}
+
+.contenedor {
+  position: relative; /* Establece el contenedor como referencia */
+  width: 90%; /* 90% del ancho */
+  height: 80%; /* 90% de la altura */
+  background-color: rgba(176, 176, 176, 0.4); /* Fondo blanco con transparencia */
+  border-bottom-right-radius: 10px; /* Bordes redondeados */
+  border-bottom-left-radius: 10px; /* Bordes redondeados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Espaciado interno */
+
+  .opciones {
+    position: absolute; /* Hace que la posición sea relativa al padre */
+    top: 0; /* Ubica el div en la parte superior del contenedor */
+    left: 0; /* Alinea el div al borde izquierdo */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 10%; /* Mantén la altura del 10% */
+    background-color: #083f8b; /* Opcional: fondo para diferenciar */
+    display: flex;
+    justify-content: space-between; /* Espacio igual entre los botones */
+    align-items: center; /* Centra los botones verticalmente */
+  }
+
+  .componente {
+    position: absolute; /* Hace que la posición sea relativa al padre */
+    bottom: 0; /* Alinea el div a la parte inferior del contenedor */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 90%; /* Mantén la altura del 90% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+

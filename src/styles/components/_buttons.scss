@@ -1,0 +1,29 @@
+@use "../settings/variables" as vars;
+
+button {
+  flex: 1; /* Los botones ocuparán espacio igual dentro del contenedor */
+  width: auto; /* Ocupa todo el ancho del contenedor */
+  height: 100%; /* Mantén la altura del 10% */
+  font-size: 20px; /* Tamaño de la fuente */
+  font-weight: 500; /* Peso de la fuente */
+  font-family: vars.$font-family;
+  color: azure; /* Color del texto */
+  background-color: #083f8b; /* Color de fondo */
+  border: none; /* Sin borde */
+  cursor: pointer; /* Cursor de mano */
+  transition: all 0.3s ease; /* Transición para efectos suaves */
+
+  &:hover {
+    background-color: #02396f; /* Fondo más oscuro al pasar el mouse */
+  }
+
+  &:active {
+    background-color: #002e5d; /* Fondo aún más oscuro al hacer clic */
+  }
+
+  &:disabled {
+    background-color: #2d3643; /* Fondo gris cuando está deshabilitado */
+    cursor: not-allowed; /* Cursor no permitido */
+    opacity: 0.6; /* Reduce la opacidad */
+  }
+}

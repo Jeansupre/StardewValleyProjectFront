@@ -1,1 +1,17 @@
-<p>admin works!</p>
+<div class="contenedor">
+  <div class="opciones">
+    <button (click)="setComponenteAMostrar('crear-categoria')">Crear categoría</button>
+  <button (click)="setComponenteAMostrar('crear-item')">Crear item</button>
+  <button (click)="setComponenteAMostrar('crear-aldeano')">Crear aldeano</button>
+  <button (click)="setComponenteAMostrar('crear-semilla')">Crear semilla</button>
+  <button (click)="setComponenteAMostrar('crear-cultivo')">Crear cultivo</button>
+  </div>
+  <div class="componente">
+    @if (componenteAMostrar === '') {<app-admin-home></app-admin-home>}
+    @if (componenteAMostrar === 'crear-categoria') {<app-crear-categoria></app-crear-categoria>}
+    @if (componenteAMostrar === 'crear-item') {<app-crear-item></app-crear-item>}
+    @if (componenteAMostrar === 'crear-aldeano') {<app-crear-aldeano></app-crear-aldeano>}
+    @if (componenteAMostrar === 'crear-semilla') {<app-crear-semilla></app-crear-semilla>}
+    @if (componenteAMostrar === 'crear-cultivo') {<app-crear-cultivo></app-crear-cultivo>}
+  </div>
+</div>

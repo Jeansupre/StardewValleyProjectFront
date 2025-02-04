@@ -19,7 +19,7 @@ export class HeadersInterceptor implements HttpInterceptor {
   ): Observable<HttpEvent<unknown>> {
     const browserLanguage = navigator.language || 'es';
     const languageHeader = browserLanguage.split('-')[0]; // Extrae 'es' de 'es-ES'
-
+    console.log(request.url)
     if (!request.url.includes('/public')) {
       // Clona la solicitud y agrega las cabeceras necesarias
       const modifiedRequestWithAuthroization = request.clone({
