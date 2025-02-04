@@ -1,0 +1,13 @@
+<form [formGroup]="crearCategoriaForm" (ngSubmit)="crearCategoria()">
+  <div>
+    <label for="nombre">Nombre de la categoría</label>
+    <mat-icon fontIcon="info"></mat-icon>
+    <input id="nombre" type="text" formControlName="nombre" placeholder="Frutas"/>
+    <div>
+      @if (crearCategoriaForm.get('nombre')?.invalid && crearCategoriaForm.get('nombre')?.touched) {
+        <small class="error">Debe ingresar un nombre de categoría.</small>
+      }
+    </div>
+  </div>
+  <button type="submit" [disabled]="crearCategoriaForm.invalid">Crear categoría</button>
+</form>
